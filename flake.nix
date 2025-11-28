@@ -18,7 +18,10 @@
       let
         haskell-overlay = final: prev: {
           ghc-with-batteries = pkgs.haskell.packages.ghc910.ghcWithHoogle (
-            hpkgs: with hpkgs; [ haskell-language-server ]
+            hpkgs: with hpkgs; [
+              haskell-language-server
+              wai-app-static
+            ]
           );
         };
         pkgs = import nixpkgs {

@@ -1,0 +1,21 @@
+cabal-version:   3.16
+name:            tars
+version:         0.1.0.0
+license:         NONE
+author:          kada-dev-group <team@kada.dev>
+maintainer:      kada-dev-group
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable tars
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.20.2.0
+                    , text
+                    , process
+                    , containers
+    hs-source-dirs:   app
+    default-language: GHC2024
