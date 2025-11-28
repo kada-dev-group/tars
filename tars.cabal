@@ -17,5 +17,7 @@ executable tars
                     , text
                     , process
                     , containers
+                    , stm
+                    , async
     hs-source-dirs:   app
     default-language: GHC2024
